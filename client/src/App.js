@@ -174,6 +174,7 @@ renderStats=()=>{
     
    const {data}=this.state
     return (
+     <>
       <ul className="unordered-column">
         <li className="table-header">
           <p className="column-id">ID</p>
@@ -183,8 +184,12 @@ renderStats=()=>{
           <p className="column-category"> Category</p>
           <p className="column-sold">Sold</p> 
           <p className="column-image">Image</p>
-        </li> 
+        </li>  
+        </ul>
      
+        <ul className="unorderedd-column">
+          
+           
       {data.map((eachData)=>(
         <li key={eachData.id} className="table-header">
           <p className="column-id">{eachData.id}</p>
@@ -199,9 +204,12 @@ renderStats=()=>{
         
         </li>
   ))}
+
+        </ul>
+    </>
      
 
-      </ul>
+     
     )
   }
 

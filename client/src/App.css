@@ -63,3 +63,11 @@
   flex-direction: column;
   border: 1px solid orange;
 }
+
+.unorderedd-column{
+  display: flex;
+  flex-direction: column;
+  border-bottom:  1px solid orange;
+  border-left: 1px solid orange;
+  border-right:1px solid orange;
+}
