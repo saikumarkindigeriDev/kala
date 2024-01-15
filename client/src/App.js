@@ -117,14 +117,14 @@ const options2={
   }
 
 increment=()=>{
-  this.setState(prevState=>({limit:(parseInt(prevState.limit)+10).toString(),
+  this.setState(prevState=>({
     offset:(parseInt(prevState.limit)).toString()}),this.fetchData)
 }
 
 
 decrement=()=>{
  
-  this.setState(prevState=>({limit:(parseInt(prevState.limit)-10).toString(),
+  this.setState(prevState=>({
     offset:(parseInt(prevState.limit)).toString()}),this.fetchData)
 
   
@@ -258,8 +258,9 @@ renderStats=()=>{
   }
 
   render(){
-    const {search,category,limit,offset}=this.state 
-    console.log(offset,limit)
+    const {search,category,limit,offset,data}=this.state 
+    console.log(offset,limit) 
+    console.log(data)
 
     return(
       <div className="container">
