@@ -86,9 +86,9 @@ try{
   }
       
     
-    const url=`http://localhost:9001/transactions/?offset=${offset}&limit=${limit}&search_q=${search_input}&category=${monthNumber}`
-    const barUrl=`http://localhost:9001/transactions/barchart/${monthNumber}`  
-    const pieUrl=`http://localhost:9001/transactions/piechart/${monthNumber}`
+    const url=`http://localhost:1000/transactions/?offset=${offset}&limit=${limit}&search_q=${search_input}&category=${monthNumber}`
+    const barUrl=`http://localhost:1000/transactions/barchart/${monthNumber}`  
+    const pieUrl=`http://localhost:1000/transactions/piechart/${monthNumber}`
     const options1={
   method:'GET',
 }  
