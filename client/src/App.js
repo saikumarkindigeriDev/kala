@@ -118,14 +118,14 @@ const options2={
 
 increment=()=>{
   this.setState(prevState=>({
-    offset:(parseInt(prevState.limit)).toString()}),this.fetchData)
+    offset:(prevState.limit)}),this.fetchData)
 }
 
 
 decrement=()=>{
  
   this.setState(prevState=>({
-    offset:(parseInt(prevState.limit)).toString()}),this.fetchData)
+    offset:(parseInt(prevState.limit)-10).toString()}),this.fetchData)
 
   
 }
