@@ -156,12 +156,15 @@ renderStats=()=>{
   ))
 
   return(
-   <>
+   <div>
+    <h1>Total Sale:{totalSale}</h1> 
+    <h1>Total Sold Items:{soldItems}</h1> 
+    <h1>Total not sold Items:{unsoldItems}</h1>
 
-<h1>{totalSale}</h1> 
-    <h1>{soldItems}</h1> 
-    <h1>{unsoldItems}</h1>
-   </>
+   </div>
+
+
+ 
   )
 
 }
