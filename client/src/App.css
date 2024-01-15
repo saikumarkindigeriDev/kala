@@ -17,6 +17,9 @@
 
 }
 
+.column-title{
+  margin-right: 10px;
+}
 .column-id{
   width: 40px; 
   margin-right: 20px;
@@ -28,11 +31,31 @@
 
 .column-title{ 
   width: 300px;
-  margin-right: 10px;
+  
 
+}
+.column-sold{
+  width: 50px;
+  margin-right: 40px;
+}
+.column-category{
+  width: 50px;
+  margin-right: 40px;
+}
+
+.column-image{
+  width: 50px;
 }
 
 
+.column-price{
+  width: 50px;
+  margin-right: 10px;
+}
+.column-des{
+  width: 400px;
+  margin-right: 10px;
+}
 
 .unordered-column{
   display: flex;

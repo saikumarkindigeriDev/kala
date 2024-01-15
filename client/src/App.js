@@ -6,8 +6,7 @@ import {
   BarChart,
   XAxis,
   YAxis,
-  Legend,
-  CartesianGrid,
+ 
   ResponsiveContainer,
   Bar,
 } from 'recharts'
@@ -176,22 +175,24 @@ renderStats=()=>{
         <li className="table-header">
           <p className="column-id">ID</p>
           <p className="column-title">Title</p>
-          <p className="column">Description</p>
-          <p className="column">Price</p>
-          <p className="column"> Category</p>
-          <p className="column">Sold</p> 
-          <p className="column">Image</p>
+          <p className="column-des">Description</p>
+          <p className="column-price">Price</p>
+          <p className="column-category"> Category</p>
+          <p className="column-sold">Sold</p> 
+          <p className="column-image">Image</p>
         </li> 
      
       {data.map((eachData)=>(
         <li key={eachData.id} className="table-header">
           <p className="column-id">{eachData.id}</p>
           <p className="column-title">{eachData.title}</p>
-          <p className="columna">{eachData.description}</p>
-          <p className="columna">{eachData.price}</p>
-          <p className="columna">{eachData.category}</p>
-          <p className="columna">{eachData.sold}</p> 
+          <p className="column-des">{eachData.description}</p>
+          <p className="column-price">{eachData.price}</p>
+          <p className="column-category">{eachData.category}</p>
+          <p className="column-sold">{eachData.sold}</p> 
+          <div className="column-image">
           <img className="image" src={eachData.image} />
+          </div>
         
         </li>
   ))}
