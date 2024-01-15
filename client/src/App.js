@@ -117,15 +117,13 @@ const options2={
   }
 
 increment=()=>{
-  this.setState(prevState=>({
-    offset:(prevState.limit)}),this.fetchData)
+  this.setState(prevState=>({limit:(parseInt(prevState.limit)+10).toString(),offset:(parseInt(prevState.limit)).toString()}),this.fetchData)
 }
 
 
 decrement=()=>{
  
-  this.setState(prevState=>({
-    offset:(parseInt(prevState.limit)-10).toString()}),this.fetchData)
+  this.setState(prevState=>({limit:(parseInt(prevState.limit)-10).toString(),offset:(parseInt(prevState.limit)).toString()}),this.fetchData)
 
   
 }
@@ -145,7 +143,7 @@ renderStats=()=>{
   let unsoldItems=0; 
 
   data.forEach(eachProduct=>(
-    Math.floor(totalSale+=eachProduct.price),
+    totalSale+=eachProduct.price,
     soldItems+=eachProduct.sold===1?1:0,
     unsoldItems+=eachProduct.sold===0?1:0
     
@@ -258,9 +256,8 @@ renderStats=()=>{
   }
 
   render(){
-    const {search,category,limit,offset,data}=this.state 
-    console.log(offset,limit) 
-    console.log(data)
+    const {search,category,limit,offset}=this.state 
+    console.log(offset,limit)
 
     return(
       <div className="container">
